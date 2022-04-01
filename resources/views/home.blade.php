@@ -74,7 +74,7 @@
       @foreach ( $videos as $video )
       <div class="col recipe-card">
           <div class="card mx-auto" style="width: 18rem;">
-            <a class="recipe-card-link" href="{{ route('video', ['video_id'=> $video->id]) }}">
+            <a class="recipe-card-link" href="{{ route('video', ['video_id'=> $video->video_id]) }}">
               <img src="{{ $video->thumbnail }}" class="card-img-top" alt="...">
               <div class="card-body my-recipe-card">
                 <h6 class="card-title card-recipe-name" id="recipe-title{{ $video->id }}">{{ $video->title }}</h6>
