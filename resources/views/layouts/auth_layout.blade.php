@@ -29,64 +29,29 @@
 
     </head>
     <body class="antialiased">
-        <nav class="navbar navbar-expand-lg navbar-dark py-3" aria-label="Main navigation">
-            <div class="container-fluid">
-              <a class="navbar-brand ps-5" href="{{ url('/') }}"><i class="fa-solid fa-utensils mx-2"></i>Cookshelf</a>
-              <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          
-              <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ms-auto me-5 pe-4 mb-2 mb-lg-0">
-                  <li class="nav-item px-2">
-                    <a class="nav-link" href="{{ url('/login') }}">ログイン</a>
-                  </li>
-                  <li class="nav-item px-2">
-                    <a class="nav-link" href="{{ url('/register') }}">会員登録</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
-          {{-- <section class="container login-container">
-            <div class="login-contents py-4">
-              {{-- {# <div class="logo-wrapper pb-2 pt-4 text-center">
-                <img src="" alt="">
-              </div> #} --}}
-                {{-- <div class="card mx-auto my-5" style="width: 35rem;">
-                  <div class="card-body py-4 shadow">
-                    <h5 class="card-subtitle mt-3 mb-4 text-center" style="color: #4169e1;">Sign up your account</h6>
-                    <div class="icon-wrapper text-center pb-2">
-                      <i class="fas fa-user-circle fa-5x" style="color: gray;"></i>
-                    </div> --}}
-                    {{-- {% if errArr.login | length > 0 %} --}}
-                    {{-- <div class="text-center text-danger">{{errArr.login}}</div> --}}
-                    {{-- {% endif %} --}}
-                    {{-- <form class="mt-2" method="post" action="login.php">
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control {% if errArr.email | length > 0 %}is-invalid{% endif %}" name="email" value="">
-                        {{-- {% if errArr.email | length > 0 %}
-                        <div class="invalid-feedback">{{errArr.email}}</div> --}}
-                        {{-- {% endif %} --}}
-                      {{-- </div> --}}
-                      {{-- <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control {% if errArr.password | length > 0 %}is-invalid{% endif %}" name="password">
-                        {{-- {% if errArr.password | length > 0 %}
-                        <div id="validationServer04Feedback" class="invalid-feedback">{{errArr.password}}</div>
-                        {% endif %} --}}
-                      {{-- </div> --}}
-                      {{-- {# <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">ログイン状態を保持する</label>
-                      {{-- </div> #} --}}
-                      {{-- <button type="submit" name="send" class="btn btn-primary mt-4">SignIn</button>
-                    </form>
-                  </div>
-                </div> --}}
-            {{-- </div>  --}}
-        {{-- </section>  --}}
+      <nav class="navbar navbar-expand-lg navbar-dark py-3">
+        <div class="container-fluid">
+          <a class="navbar-brand ps-lg-5" href=""><i class="fa-solid fa-utensils mx-2"></i>Cookshelf</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#linkMenu" aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="linkMenu">
+            <ul class="navbar-nav ms-auto me-lg-5 mb-lg-0">
+              <li class="nav-item dropdown px-lg-2 mx-lg-2">
+                <a class="nav-link" href="/login">
+                  ログイン
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="/register">
+                  会員登録
+                </a>
+              </li>    
+            </ul>
+          </div>
+        </div>
+    </nav>
+
         <main class="py-4">
             @yield('content')
         </main>

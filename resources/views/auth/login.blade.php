@@ -6,7 +6,7 @@
       {{-- {# <div class="logo-wrapper pb-2 pt-4 text-center">
         <img src="" alt="">
       </div> #} --}}
-        <div class="card mx-auto my-5" style="width: 35rem;">
+        <div class="card mx-auto my-5 login-card">
           <div class="card-body py-4 shadow">
             <h5 class="card-subtitle mt-3 mb-4 text-center" style="color: #4169e1;">Sign up your account</h6>
             <div class="icon-wrapper text-center pb-2">

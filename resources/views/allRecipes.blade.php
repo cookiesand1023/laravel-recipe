@@ -90,7 +90,9 @@
       @endforeach
     </div>
     <div class="mr-auto">
+      @if ( count($recipes) !== 0)
       {{ $recipes->links() }}
+      @endif
     </div>
   </div>
   <input type="hidden" name="current-page" id="current-page" value="myRecipes.php">
