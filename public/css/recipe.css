@@ -1,0 +1,467 @@
+body {
+    background-color: #f6f5f0;
+    height: auto;  
+}
+
+.navbar {
+    background-color: #8ED6C5;
+}
+
+.nav-arrow-link {
+    color: #212529;
+}
+
+.fa-utensils {
+    color: white;
+}
+
+.bt-home {
+    padding: 6px 12px;
+}
+
+.btn-toggle::before {
+    content: " \f105";
+    font-family: "FontAwesome";
+    color: gray;
+    margin-right: 5px;
+}
+
+.btn-toggle[aria-expanded="true"]::before {
+    content: " \f107";
+    font-family: "FontAwesome";
+    color: gray;
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.login-container {
+    height: 600px;
+    width: 70%;
+}
+
+.icon-wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.shelf-wrap {
+    min-height: 420px;
+}
+
+/* .btn-purple {
+    background-color: 	white !important;
+    color: #B384FF !important;
+    border-color: #B384FF !important;
+}
+
+.btn-purple:hover {
+    background-color: 	#B384FF !important;
+    color: white !important;
+} */
+
+.btn-blue {
+    background-color: 	white !important;
+    color: #4169e1 !important;
+    border-color: #4169e1 !important;
+    font-size: 12px;
+}
+
+.btn-blue:hover {
+    background-color: 	#4169e1 !important;
+    color: white !important;
+}
+
+/* .btn-orange {
+    background-color: 	#FFCC66;
+    color: white;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right:40px;
+    bottom:40px;
+    font-size: 250%;
+    box-shadow: 0px 0px 15px -8px rgb(0 0 0 / 70%);
+} */
+
+/* .btn-orange:hover {
+    background-color: 	#FFCC66;
+    color: white;
+    opacity: 0.6;
+} */
+
+.btn-red {
+    background-color: 	white;
+    color: #dc143c;
+    border-color: #dc143c;
+}
+
+.btn-red:hover {
+    background-color: 	#dc143c;
+    color: white;
+}
+
+.btn-getThumb {
+    background-color: 	white;
+    color: #3cb371;
+    border-color: #3cb371;
+}
+
+.btn-getThumb:hover {
+    background-color: 	#3cb371;
+    color: white;
+}
+
+
+.btn-icon {
+    border: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.fa-pen-to-square:hover {
+    color: #4169e1;
+}
+
+.fa-trash-can:hover {
+    color: #FF3333;
+}
+
+.book-link {
+    color: #333333;
+}
+
+/* book.php */
+.book-container {
+    min-height: 500px;
+    position: relative;
+}
+
+/* .book-detail {
+    margin-right: 220px;
+} */
+
+.recipe-card {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.recipe-card:hover {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.recipe-card-link {
+    color: #333333;
+}
+
+/* アイコンを絶対配置 */
+.my-recipe-card {
+    position: relative;
+}
+
+.recipe-card-trash {
+    width: 30px;
+    position:absolute;
+    bottom: 8px;
+    right:6px;
+    font-size:0.9em;
+}
+
+/* 星評価 */
+
+.evaluation{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.evaluation input[type='radio']{
+    display: none;
+}
+
+.evaluation label{
+    padding: 5px 5px 0;
+    border-color: #333333;
+    color: gray;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.evaluation label:hover,
+.evaluation label:hover ~ label,
+.evaluation input[type='radio']:checked ~ label{
+  color: #ffcc00;
+}
+
+.star-display {
+    color: #ffcc00;
+}
+
+/* youtubeアイコン */
+.fa-youtube {
+    color: red;
+}
+
+/* カテゴリータグ */
+.tag {
+    height: 25px;
+    background-color: #a9a9a9;
+    line-height: 1.9em;
+    width: auto;
+    color: white;
+    font-size: small;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.card-tag {
+    height: 25px;
+    background-color: #a9a9a9;
+    line-height: 1.9em;
+    width: auto;
+    color: white;
+    font-size: small;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+/* recipe.php */
+
+.recipe-name {
+    width: 800px;
+}
+
+.eval {
+    display: inline-block;
+}
+
+.detail-text {
+    min-height: 100px;
+}
+
+
+/* myRecipe */
+.search-form:focus {
+    box-shadow: 0px 0px 10px -6px #808080 !important;
+}
+
+.nav-tab {
+    color: #212529;
+}
+
+.fc-active {
+    color: #8b008b !important;
+}
+
+/* allVideos.php */
+.video-card {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.video-card:hover {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.video-card-link {
+    color: #333333;
+}
+
+
+
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    .create-dialog {
+        width: 340px;
+    }
+
+    .setting-form {
+        width: 300px;
+    }
+
+    .btn-orange {
+        background-color: 	#FFCC66;
+        color: white;
+        width: 80px;
+        height: 80px;
+        position: fixed;
+        right:40px;
+        bottom:40px;
+        font-size: 250%;
+        box-shadow: 0px 0px 15px -8px rgb(0 0 0 / 70%);
+        z-index: 50;
+    }
+
+    .btn-orange:hover {
+        background-color: 	#FFCC66;
+        color: white;
+        opacity: 0.6;
+    }
+
+    .page-title {
+        font-size: small;
+    }
+
+    .nav-tab {
+        font-size: small;
+    }
+
+    .ctg-tag-link {
+        display: none;
+        font-size: small;
+    }
+
+    .ctg-tag-link-selected {
+        font-size: small;
+    }
+
+    .youtube {
+        width: 288px;
+        height: 162px;
+    }
+
+    .update-date {
+        font-size: 8px;
+    }
+
+    .recipe-icon-edit {
+        font-size: small;
+    }
+
+    .recipe-icon-delete {
+        font-size: small;
+    }
+
+    .modal-content {
+        margin-bottom: 80px;
+    }
+
+    .modal-recipe-image {
+        width: 256px;
+        height: 144px;
+    }
+
+    .recipe-name {
+        font-size: small;
+    }
+
+    .recipe-user-image {
+        width: 15px;
+        height: 15px;
+    }
+
+    .detail-text {
+        font-size: 6px;
+        word-wrap: break-word;
+    }
+
+    .describe {
+        display: none;
+    }
+
+    .btn-purple {
+        background-color: 	white !important;
+        color: #B384FF !important;
+        border-color: #B384FF !important;
+    }
+    
+    .btn-purple:hover {
+        background-color: 	#B384FF !important;
+        color: white !important;
+    }
+}
+
+@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+    .login-card {
+        width: 35rem;
+    }
+
+    .create-dialog {
+        width: 700px;
+    }
+
+    .setting-form {
+        width: 500px;
+    }
+
+    .btn-orange {
+        background-color: 	#FFCC66;
+        color: white;
+        width: 80px;
+        height: 80px;
+        position: fixed;
+        right:40px;
+        bottom:40px;
+        font-size: 250%;
+        box-shadow: 0px 0px 15px -8px rgb(0 0 0 / 70%);
+        z-index: 50;
+    }
+
+    .btn-orange:hover {
+        background-color: 	#FFCC66;
+        color: white;
+        opacity: 0.6;
+    }
+
+    .btn-purple {
+        background-color: 	white !important;
+        color: #B384FF !important;
+        border-color: #B384FF !important;
+    }
+    
+    .btn-purple:hover {
+        background-color: 	#B384FF !important;
+        color: white !important;
+    }
+}
+
+.image-wrap{
+    position: relative;
+}
+.editThumb:hover {
+    opacity: 0.8;
+}
+
+
+
+.caption {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* .caption:hover {
+    opacity: 0.8;
+} */
+
+
+.a-thumbnail {
+    cursor: pointer;
+}
+
+.editThumb {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.deleteThumb {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.thumbnail-image {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
